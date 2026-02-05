@@ -59,7 +59,7 @@ with open(json_path_3, 'w') as file:
 df3 = spark.read.json(json_path_3)
 df3.select("id", explode(col("hobbies")).alias("hobby")).show()
 
-
+# till here I have practiced
 
 # Exercise 4: Load a JSON file with schema inference
 print("\nExercise 4: Load a JSON file with schema inference")
